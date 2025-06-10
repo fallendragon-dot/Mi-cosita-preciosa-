@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verdad o Reto Hot 💗🔥</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fcbad3;
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+
+    h1 {
+      color: #a40050;
+      margin-bottom: 20px;
+    }
+
+    #output {
+      margin-top: 25px;
+      font-size: 20px;
+      color: #3b3b3b;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      color: #a40050;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffd6e8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Verdad o Reto Hot 🔥</h1>
+    <button onclick="mostrar('verdad')">Verdad 💬</button>
+    <button onclick="mostrar('reto')">Reto 😈</button>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const verdades = [
+      "¿Te has tocado pensando en mí? ¿Cuándo fue la última vez?",
+      "¿Qué parte de mi cuerpo mueres por besar?",
+      "¿Te has imaginado haciendo el amor conmigo? ¿Cómo?",
+      "¿Qué es lo más atrevido que te gustaría hacerme la primera noche juntos?",
+      "¿Te excita que estemos lejos y tengamos que imaginarnos?",
+      "¿Qué palabra mía te prende más cuando te la digo?",
+      "¿En qué parte de tu cuerpo te gustaría que te besara lentamente?",
+      "¿Qué prenda mía te gustaría quitarme con las manos… o con los dientes?",
+      "Si tuviéramos una noche sin límites, ¿qué es lo primero que me harías?",
+      "¿Qué fantasía te gustaría cumplir conmigo por videollamada?",
+      "¿Te gustaría que te dominara o dominarme?",
+      "¿Alguna vez pensaste en grabarnos teniendo algo íntimo?",
+      "¿Cuál sería tu lugar ideal para tener algo salvaje conmigo?",
+      "Si te digo 'hazme todo', ¿qué sería lo primero que harías?",
+      "¿Has imaginado que te sorprendo entrando a tu habitación de noche? ¿Qué pasaría?",
+      "¿Fantaseas con que te ate, te venda los ojos o que no puedas moverte?",
+      "¿Qué es lo que más te enamora de mí?",
+      "¿Has llorado alguna vez por extrañarme?",
+      "¿Te imaginas viviendo conmigo en el futuro? ¿Cómo sería?",
+      "¿Qué momento a distancia te ha hecho sentir más conectado conmigo?",
+      "¿Cómo sería tu cita ideal conmigo si estuviéramos juntos hoy?",
+      "¿Cuál ha sido el mensaje más bonito que te he mandado?"
+    ];
+
+    const retos = [
+      "Mándame un audio diciéndome algo sucio con tu voz más sexy 😏",
+      "Escríbeme tu fantasía conmigo… sin censura.",
+      "Quítate una prenda (aunque estemos por llamada) y descríbemelo.",
+      "Haz una videollamada y enséñame tu mirada más provocadora durante 5 segundos sin decir nada.",
+      "Mándame una foto sensual (no explícita) con algo que sepas que me enloquece.",
+      "Escribe en el chat la frase más caliente que se te ocurra como si estuviéramos juntos ahora.",
+      "Envíame una nota de voz susurrándome cómo sería nuestra primera noche juntos.",
+      "Describe con detalles cómo me harías el amor si esta noche apareciera en tu cama.",
+      "Dime algo atrevido… pero con voz inocente.",
+      "Dime una fantasía que te da vergüenza contar… y prométeme que algún día la cumpliremos juntos."
+    ];
+
+    function mostrar(tipo) {
+      const lista = tipo === 'verdad' ? verdades : retos;
+      const random = Math.floor(Math.random() * lista.length);
+      document.getElementById("output").innerText = lista[random];
+    }
+  </script>
+</body>
+</html>
